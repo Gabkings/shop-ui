@@ -14,7 +14,10 @@ const Container = styled.div`
 
 `;
 
-const Products = () => {
+const Products = ({cats, filters, sorts}) => {
+  console.log(cats)
+  console.log(filters)
+  console.log(sorts)
   return (
     <Container>{
         popularProducts.map((product) =>(
